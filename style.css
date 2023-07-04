@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* --------------------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #212529;
+  color: #fff;
+  height: 6rem;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2rem;
+}
+.main {
+  padding-top: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-size: 4rem;
+  height: 20rem;
+  max-width: 120rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.keyboard {
+  display: grid;
+  grid-template-rows: repeat(5, 6rem);
+  grid-template-columns: repeat(15, 6rem);
+  gap: 1rem;
+}
+
+.key {
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  box-shadow: 0 0 0 2px #93989d;
+  border-radius: 6px;
+  transition: all 0.1s;
+}
+.active-key {
+  background-color: #ff6b6b;
+}
+
+[data-code="91"] {
+  font-size: 3rem;
+}
+
+[data-code="17"],
+[data-code="16"],
+[data-code="13"],
+[data-code="20"],
+[data-code="14"],
+[data-code="9"],
+[data-code="8"] {
+  width: 13rem;
+  grid-column: span 2;
+}
+[data-code="32"] {
+  width: 55rem;
+  grid-column: span 8;
+}
+[data-key="RShift"] {
+  width: 20rem;
+  grid-column: span 3;
+}
+[data-key="LCtrl"] {
+  grid-column: span 3;
+  justify-self: end;
+}
